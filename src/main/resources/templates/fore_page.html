@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://www.html-js.com/article -->
+<html xmlns:wb="http://open.weibo.com/wb"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <link rel="Shortcut Icon" href="http://htmljs.b0.upaiyun.com//images/logo.ico?123">
+    <link href="http://htmljs.b0.upaiyun.com//images/logo.ico?123" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="/fore_page/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="/fore_page/main.css" type="text/css">
+    <link rel="stylesheet" href="/fore_page/prettify.css" type="text/css">
+    <link rel="stylesheet" href="/fore_page/glyphicons.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://htmljs.b0.upaiyun.com//images/icon.png" rel="apple-touch-icon">
+    <meta name="keywords" content="前端, 前端开发, web前端, web前端开发, 前端开发工程师, 前端开发攻城师,设计, 开发, 前端资源, CSS, JavaScript, Ajax, jQuery, html,html5,css3,浏览器兼容, 前端开发工具, 前端招聘, jQuery API, CSS整形和优化工具 , JS压缩工具 , JS格式化工具 , CSS参考手册 ,HTML参考手册 , 多重搜索 , nodejs , node , boostrap , sublime">
+    <meta name="baidu-site-verification" content="OnKVgNu37S">
+    <script>if($.browser.msie<8){alert("请不要使用ie浏览本站！本站不支持ie10以下浏览器。")}</script>
+    <title>Amber论坛</title><meta name="description" content="前端乱炖，这里是最专业的前端知识平台，汇集国内大部分前端开发人员的前端花名册，最精彩的原创文章专栏，最专业的问答平台，最火热的话题频道，最丰富的线下线上活动。html,js,css,nodejs,前端开发,前端招聘,jquery,qianduan">
+    <script src="/fore_page/bootstrap-transition.js"></script>
+    <script src="/fore_page/bootstrap-modal.js"></script>
+    <script src="/fore_page/bootstrap-tooltip.js"></script>
+    <style></style>
+    <script src="/fore_page/wb.js"></script>
+  <style type="text/css">
+.ad320-index,.ad-blank {display:none!important;display:none}</style>
+</head>
+  <body id="articles">
+    <div id="header">
+      <div class="wrapper clearfix"><a href="http://www.html-js.com/" title="前端乱炖" class="logo"><span class="dun">炖</span></a>
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <div class="container">
+              <div class="nav-collapse collapse">
+                <ul class="nav left-nav">
+                  <li pageid="10"><a href="http://www.html-js.com/topic"><i class="icon-group"></i>讨论区</a></li>
+                  <li pageid="20" class="hidden"><a href="http://www.html-js.com/talk"><i class="icon-conversation"></i>实时讨论</a></li>
+                  <li pageid="15" class="hidden"><a href="http://www.html-js.com/blog"><i class="icon-sampler"></i>博集</a></li>
+                  <li pageid="8" class="hidden"><a href="http://www.html-js.com/tag">标签</a></li>
+                  <li pageid="2" class="hidden"><a href="http://www.html-js.com/job"><i class="icon-leaf"></i>招聘</a></li>
+                  <li pageid="2"><a href="http://www.html-js.com/cards"><i class="icon-nameplate"></i>花名册</a></li>
+                  <li pageid="101"><a href="https://www.upyun.com/https">网站 HTTPS 检测</a></li>
+                  <li class="search">
+                    <form action="http://www.html-js.com/search" method="get" style="margin:0;"><i class="icon-search"></i>
+                      <input id="keyword" type="text" name="q" placeholder="搜索全站、站外内容" class="span2 input-large">
+                    </form>
+                  </li>
+                  <li pageid="6" class="hidden"><a href="http://www.html-js.com/book">免费送书</a></li>
+                </ul>
+                 
+                <ul class="right-nav">
+                  <li><a href="http://www.html-js.com/user/login?redirect=%2Farticle">${nn}</a></li>
+                 
+                  <li><a href="http://www.html-js.com/talk"><i class="icon-conversation"></i>在线聊天</a></li>
+                  
+                  <li class="hidden sub-trigger"><a>其他功能</a>
+                    <ul class="sub-menu hidden">
+                      <li pageid="5"><a href="http://www.html-js.com/act">活动</a></li>
+                      <li pageid="9"><a href="http://www.html-js.com/tools"><i class="icon-classic-hammer hidden"></i>常用工具</a><span class="my-favs"></span></li>
+                      <li><a href="http://www.html-js.com/talk">实时讨论</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/fore_page/jquery.js"></script>
+    <script src="/fore_page/htmljs.js"></script>
+    <script src="/fore_page/prettify.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".sub-trigger").mouseenter(function(){
+          $(".sub-menu",this).removeClass("hidden")
+          }).mouseleave(function(){
+          $(".sub-menu",this).addClass("hidden")
+          })
+        })
+    </script>
+    <div id="content" class="clearfix">
+      <div style="padding:0;" class="module"><a href="https://www.upyun.com/products/prismcdn?utm_source=htmljs&utm_medium=banner&utm_campaign=prismcdn&utm_content=0510"></a></div>
+      <div class="my_columns mod-white">
+        <div class="hd">我的专栏</div>
+        <div class="bd">
+          <div class="no">想要发表论坛？ <a href="/addpublish.html">发表论坛</a></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="left">
+          <div class="articles mod-white">
+        <!-- 
+         <article id="tab" >
+              <div class="title-wrapper">
+              <a href="http://www.html-js.com/article/4565" rel="bookmark" class="entry-title">
+              <span class="real-t real-title-39">
+                 </span></a></div>
+              <div class="entry-foot">
+                <div class="other-r">
+                <span class="views item">
+                <a rel="author" href="http://www.html-js.com/user/1" class="username value url fn">      </a></span>
+                <span class="views item">
+                <span class="index"></span>
+                <a class="value"></a>
+                </span>
+                <span class="views item">
+                <span class="index"></span>
+                <a class="value"></a></span>
+                <span class="views item">
+                <a class="value"></a></span>
+                </div>
+              </div>
+            </article>
+            	 -->
+              <article id="tab">
+              
+              
+              <div>
+              <a href="http://www.html-js.com/article/4474" title="聊聊Vue.js的template编译" rel="bookmark" class="entry-title">
+              <span class="real-t real-title-11"><i class="t-tip tip-jing">精</i>聊聊Vue.js的template编译</span></a></div>
+             
+              <div class="entry-foot">
+                <div class="other-r">
+                <span class="views item">
+                <a rel="author" href="http://www.html-js.com/user/10423" class="username value url fn">染陌同学</a></span>
+                <span class="views item">
+                <span class="index">浏览：</span>
+                <a class="value">8437</a></span>
+                <span class="views item"><span class="index">评论：</span>
+                <a class="value">6</a></span><span class="views item">
+                <a class="value">7个月前</a></span>
+               
+                </div>
+              </div>
+            
+            </article>
+       		
+       		
+       		 <div class="pagination clearfix">
+              <ul id="pagenum">
+
+              </ul>
+               <div class="total label"><span id="snum">共 960</span> </div>
+          </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="mod-white top-columns">
+          <div class="column">
+            <div class="title">
+              <div class="user"><a data-original-title="APICloud" href="http://www.html-js.com/user/4103"><img src="/fore_page/1"></a></div><a href="http://www.html-js.com/article/column/866" style="color:#444;">APICloud移动应用开发平台  专栏</a>
+            </div>
+            <div class="others"><span>文章数：66</span><span>访问数：97724</span></div>
+            <div class="desc">7天开发APP，重新定义移动应用开发。可以帮助开发者快速实现移动应用的开发、测试、发布、管理和运营的全生命周期管理。云A</div>
+          </div>
+          <div class="column">
+            <div class="title">
+              <div class="user"><a data-original-title="张小俊128" href="http://www.html-js.com/user/526"><img src="/fore_page/1(1)"></a></div><a href="http://www.html-js.com/article/column/50" style="color:#444;">用Angular开发web应用  专栏</a>
+            </div>
+            <div class="others"><span>文章数：30</span><span>访问数：500296</span></div>
+            <div class="desc">讲述Angular开发框架的基础知识，帮助读者快速学习并深入理解Angular的开发理念和具体应用方式</div>
+          </div>
+          <div class="column">
+            <div class="title">
+              <div class="user"><a data-original-title="Array Huang" href="http://www.html-js.com/user/3920"><img src="/fore_page/1(2)"></a></div><a href="http://www.html-js.com/article/column/4770" style="color:#444;">实用至上  专栏</a>
+            </div>
+            <div class="others"><span>文章数：19</span><span>访问数：20285</span></div>
+            <div class="desc">记录和分享我在开发过程中的心得与感悟</div>
+          </div>
+          <div class="column">
+            <div class="title">
+              <div class="user"><a data-original-title="极乐科技" href="http://www.html-js.com/user/8867"><img src="/fore_page/005KffVhjw8f46j9i58zwj305w05wq2r.jpg"></a></div><a href="http://www.html-js.com/article/column/4764" style="color:#444;">极乐科技  专栏</a>
+            </div>
+            <div class="others"><span>文章数：39</span><span>访问数：41332</span></div>
+            <div class="desc">面向IT技术人员和技术供应商服务的平台网站，我们的口号是：让技术变得更简单！极乐网</div>
+          </div>
+          <div class="column">
+            <div class="title">
+              <div class="user"><a data-original-title="doramart" href="http://www.html-js.com/user/6411"><img src="/fore_page/1(3)"></a></div><a href="http://www.html-js.com/article/column/4544" style="color:#444;">nodejs开发  专栏</a>
+            </div>
+            <div class="others"><span>文章数：23</span><span>访问数：34556</span></div>
+            <div class="desc">nodejs开发技术指南</div>
+          </div>
+          <div class="column">
+            <div class="title">
+              <div class="user"><a data-original-title="极乐科技" href="http://www.html-js.com/user/10760"><img src="/fore_page/006Msxymly8fh6wk9poggj30dw0dwdgv.jpg"></a></div><a href="http://www.html-js.com/article/column/4892" style="color:#444;">极乐科技  专栏</a>
+            </div>
+            <div class="others"><span>文章数：44</span><span>访问数：6820</span></div>
+            <div class="desc">极乐科技提供技术相关资讯、内容、源码等。包括来源于微信小程序联盟、极乐小程序商店、极乐知乎专栏内容。</div>
+          </div>
+          <div class="column">
+            <div class="title">
+              <div class="user"><a data-original-title="楼兰雅韵" href="http://www.html-js.com/user/10110"><img src="/fore_page/8281bb80gw1efg4b7kehoj20l311igw9.jpg"></a></div><a href="http://www.html-js.com/article/column/4816" style="color:#444;">WEB前端学习  专栏</a>
+            </div>
+            <div class="others"><span>文章数：37</span><span>访问数：5430</span></div>
+            <div class="desc">web前端学习部落22群web前端学习部落33群</div>
+          </div>
+          <div class="column">
+            <div class="title">
+              <div class="user"><a data-original-title="m3u8flash专家" href="http://www.html-js.com/user/10596"><img src="/fore_page/006MPI50ly8ffhd4mn8vyj306y06ydfp.jpg"></a></div><a href="http://www.html-js.com/article/column/4869" style="color:#444;">流媒体  专栏</a>
+            </div>
+            <div class="others"><span>文章数：41</span><span>访问数：19612</span></div>
+            <div class="desc">流媒体的专栏</div>
+          </div>
+          <div class="column">
+            <div class="title">
+              <div class="user"><a data-original-title="HTML5" href="http://www.html-js.com/user/1846"><img src="/fore_page/1(4)"></a></div><a href="http://www.html-js.com/article/column/148" style="color:#444;">Qunee图形组件  专栏</a>
+            </div>
+            <div class="others"><span>文章数：37</span><span>访问数：127103</span></div>
+            <div class="desc">【QuneeforHTML5开发清新、高效的图形组件】demo：http://demo.qunee.com这是一套基于H</div>
+          </div>
+          <div class="column">
+            <div class="title">
+              <div class="user"><a data-original-title="Coding" href="http://www.html-js.com/user/3480"><img src="/fore_page/1(5)"></a></div><a href="http://www.html-js.com/article/column/699" style="color:#444;">Coding 技术博客  专栏</a>
+            </div>
+            <div class="others"><span>文章数：30</span><span>访问数：52778</span></div>
+            <div class="desc">Coding.net为软件开发者提供基于云计算技术的软件开发平台，包括项目管理，代码托管，运行空间和质量控制等等。目前，</div>
+          </div>
+          <div class="column">
+            <div class="title">
+              <div class="user"><a data-original-title="DO1路人乙" href="http://www.html-js.com/user/1514"><img src="/fore_page/1(6)"></a></div><a href="http://www.html-js.com/article/column/222" style="color:#444;">css研究  专栏</a>
+            </div>
+            <div class="others"><span>文章数：27</span><span>访问数：130033</span></div>
+            <div class="desc">很喜欢这个前端论坛~所以在自己博客的每一篇原创文章都会在这边跟大家分享一下，暂定就这么多，纯粹的爱好者。</div>
+          </div>
+          <div class="column">
+            <div class="title">
+              <div class="user"><a data-original-title="Bolt_白衣苍狗" href="http://www.html-js.com/user/522"><img src="/fore_page/1(7)"></a></div><a href="http://www.html-js.com/article/column/98" style="color:#444;">My Code Wars 我的代码战争【休息一下】  专栏</a>
+            </div>
+            <div class="others"><span>文章数：20</span><span>访问数：56094</span></div>
+            <div class="desc">这里讲述的是一个8级（kyu）菜鸟立志成为8段（dan）大神的故事。他在代码战争中一次次遭遇挫败，而又在乱炖中获得高人指</div>
+          </div>
+          <div class="column">
+            <div class="title">
+              <div class="user"><a data-original-title="GitHub不完全装B指南" href="http://www.html-js.com/user/1470"><img src="/fore_page/1(8)"></a></div><a href="http://www.html-js.com/article/column/113" style="color:#444;">GitHub不完全装B指南  专栏</a>
+            </div>
+            <div class="others"><span>文章数：32</span><span>访问数：190905</span></div>
+            <div class="desc">介绍我自己搜集到的一些优秀开源库，希望通过自己的努力让更多的人认识GitHub，了解GitHub，最后从GitHub中受</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/fore_page/messageTip.js"></script><div class="message-tip" style="display: none;">欢迎光临</div>
+    <script src="/fore_page/loadingTip.js"></script><div class="loading-tip">正在加载中。。。</div>
+    <script>
+      $('.actions a').tooltip({
+          placement:"bottom"
+      })
+      $('.t-user').tooltip({
+          placement:"bottom"
+      })
+      $(".rss-btn").click(function(e){
+        e.preventDefault();
+        var href= $(this).attr("href")
+        HtmlJS.util.ajax(href,{
+        
+            },"post",function(data){
+                loadingTip.hide()
+                if(data.success){
+                  messageTip.show("订阅成功！")
+                }else{
+                  alert(data.info)
+                }
+            },function(){
+              HtmlJS.util.ajax(href,{
+              
+              },"post",function(data){
+                  loadingTip.hide()
+                  if(data.success){
+                    messageTip.show("订阅成功！")
+                  }else{
+                    alert(data.info)
+                  }
+              },function(){
+              
+              
+            })
+            
+        })
+        })
+    </script>
+    <div id="footer">
+      <div class="wrapper">
+        <div class="module support">
+          <div class="hd">赞助商</div>
+          <div class="bd">
+            <ul style="margin-left:0;" class="clearfix">
+              <li><a href="http://www.imooc.com/course/list?c=fe" target="_blank" title="免费的IT技能学习平台"><img src="/fore_page/1419232355686-未标题-1.png">
+                  <div class="desc">免费的IT技能学习平台</div></a></li>
+              <li class="hidden"><a href="https://www.upyun.com/" target="_blank"><img src="/fore_page/1385469219452-Snip20131126_10.png">
+                  <div class="desc">高速稳定的存储服务</div></a></li>
+              <li><a href="http://oneapm.com/" target="_blank" title="优秀的性能分析工具"><img src="/fore_page/1461145246085-01db76d06153cac4578ef04abf05dc05.jpg">
+                  <div class="desc">优秀的性能分析工具</div></a></li>
+              <li><a href="http://www.jiankongbao.com/"><img src="/fore_page/1413168456981-未标题-1.png">
+                  <div class="desc">端到端应用性能管理专家</div></a></li>
+              <li><a href="http://appcan.cn/"><img src="/fore_page/1423040565748-AppCan-logo蓝色.png">
+                  <div class="desc">一站式移动开发服务平台</div></a></li>
+              <li class="hidden"><a href="http://apicloud.com/"><img src="/fore_page/1423880680956-小logo.png">
+                  <div class="desc">重新定义移动应用开发</div></a></li>
+              <li><a href="https://www.upyun.com/"><img src="/fore_page/55a718a661d796fd31d924ed2a64e4ce.jpg">
+                  <div class="desc">领先企业级云服务商</div></a></li>
+            </ul>
+            <div class="add"><a href="http://www.html-js.com/topic/827">我也要赞助</a></div>
+          </div>
+        </div>
+        <div class="module">
+          <div style="font-size:12px;line-height:20px;">Power By NodeJS，本站所有代码的地址在<a href="https://github.com/xinyu198736/htmljs" target="_blank">这里</a>  浙ICP备12047043号  <a href="http://www.html-js.com/friendlink">友情链接</a>  <a href="https://f2e.souche.com/blog" target="_blank">大搜车前端团队博客</a></div>
+        </div>
+      </div>
+    </div>
+    <div id="coin-fixed"><span id="gotop"><i class="icon-airplane"></i></span><span class="my-favs"><i class="icon-heart"></i><a href="http://www.html-js.com/user/fav"> 我的收藏</a></span>
+    </div>
+    <script>
+      try{
+        $('.tooltip-trigger').tooltip({
+              placement:"bottom"
+              });
+      }catch(e){};
+      
+      
+      
+    </script>
+    <div class="hidden">
+      <script>
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2fc2fae0509f820259c1760fce28d7d2' type='text/javascript'%3E%3C/script%3E"));
+        
+      </script><script src="/fore_page/h.js" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=2fc2fae0509f820259c1760fce28d7d2" target="_blank"><img border="0" src="/fore_page/21.gif" width="20" height="20"></a>
+    </div>
+  <script type="text/javascript">
+      var dqpage;//当前页数
+      var pagenum;
+$( function requestData(){
+        $.ajax({
+            url: "/user/listArticle",
+            type: "post",
+             dataType: "json",
+             success: function(json){
+                /*这个方法里是ajax发送请求成功之后执行的代码*/
+                 showData(json);//我们仅做数据展示
+                  var sumnum=json.length;//总数据量
+                   pagenum=json.length/6;//总页数
+                 var page='<li id="prevpage"  class="disabled"><a id="pageprev" >Prev</a></li>';
+                     for (var i=1;i<pagenum+1;i++) {
+                         page+='<li><a name="a"  href="javascript:void(0)" onclick="pageajax('+i+',this)" >'+i+'</a></li>';
+                     }
+                    page+='<li id="nextpage"><a id="pagenext" href="javascript:pageajax(2);">Next</a></li>';
+                     $("#pagenum").html(page);
+                 $("#snum").html("共"+sumnum+"条");
+              },
+             error: function(json){
+                 alert("ajax连接异常："+json);
+             }
+         })
+   
+ function showData(json) {
+ 			
+               var str = "";//定义用于拼接的字符串
+               $("#tab").empty();
+              for (var i = 0; i <6; i++) {
+        		 var timestampUid =json[i].w_id*1000;
+        		 var timestampIng = Date.parse(new Date());
+        		 
+        		 //小时
+				 var time=parseInt((timestampIng-timestampUid)/(1000*3600));
+				 
+				if(time>1 && time<25){
+             //拼接表格的行和列
+             		
+			str = "<article><div><a href='/user/pages?page=view' onclick='view(this)'   name="+json[i].a_id+"   id='view' class='entry-title'><span class='real-t'><i class='t-tip tip-jing'>精</i>" +json[i].w_title + 
+			"</span></a></div><div class='entry-foot'><div class='other-r'><span class='views item'><a  class='username value url fn'>" + json[i].u_nickname+"</a></span ><span class='views item'><span class='index'>浏览："+
+			"</span><a class='value'>2"+"</a></span><span class='views item' ><span class='index'>评论："+"</span><a class='value'>2"+"</a></span><span class='views item'><a class='value'>"+time+"小时前</a></span></div></div></article>";
+			 $("#tab").append(str); 
+			}else if(time<1 ){
+			str = "<article><div><a href='/user/pages?page=view' onclick='view(this)'   name="+json[i].a_id+"   id='view'  class='entry-title'><span class='real-t'><i class='t-tip tip-jing'>精</i>" +json[i].w_title + 
+			"</span></a></div><div class='entry-foot'><div class='other-r'><span class='views item'><a  class='username value url fn'>" + json[i].u_nickname +"</a></span ><span class='views item'><span class='index'>浏览："+
+			"</span><a class='value'>2"+"</a></span><span class='views item' ><span class='index'>评论："+"</span><a class='value'>2"+"</a></span><span class='views item'><a class='value'>"+"刚刚</a></span></div></div></article>";
+			 $("#tab").append(str); 
+			}else{
+				
+				times=parseInt(time/24);
+			str = "<article><div><a href='/user/pages?page=view' onclick='view(this)'   name="+json[i].a_id+"   id='view'  class='entry-title'><span class='real-t'><i class='t-tip tip-jing'>精</i>" +json[i].w_title + 
+			"</span></a></div><div class='entry-foot'><div class='other-r'><span class='views item'><a  class='username value url fn'>" + json[i].u_nickname +"</a></span ><span class='views item'><span class='index'>浏览："+
+			"</span><a class='value'>2"+"</a></span><span class='views item' ><span class='index'>评论："+"</span><a class='value'>2"+"</a></span><span class='views item'><a class='value'>"+times+"天前</a></span></div></div></article>";
+			 $("#tab").append(str); 
+			}
+			}
+           }
+     })
+	function view(sdf){
+			var aidd=sdf.getAttribute('name');
+			
+			 $.post("/user/aid", 
+     		 {aid:aidd}    
+     		  ,
+     		  
+		     function(data){
+			
+			
+		     });
+	}
+
+    // $(document).ready(function () {
+    //     $.post("/user/listArticle",
+    //         function(data){
+    //             alert(data); // John
+    //             alert(data.length);
+    //         }, "json");
+    // });
+    					//当前页数，
+          function pageajax(x,d) {
+          		
+          
+              dqpage = x;
+              $("ul >li").removeClass("active");
+              if(d!=undefined){
+                  $(d).parent().addClass("active");
+              }else {
+                  var jk=$("#pagenum").children("li")[dqpage];
+                  $(jk).addClass("active");
+              }
+              $.post("/page/limit",
+                  {paegvalue: x},
+                  function (json) {
+                  	//	alert(json[0].u_nickname);
+                      $("#tab").empty();
+                for (var i = 0; i <json.length; i++) {
+        		 var timestampUid =json[i].w_id*1000;
+        		 var timestampIng = Date.parse(new Date());
+        		 
+        		 //小时
+				 var time=parseInt((timestampIng-timestampUid)/(1000*3600));
+				 
+				if(time>1 && time<25){
+             //拼接表格的行和列
+             		
+			str = "<article><div><a href='/user/pages?page=view' onclick='view(this)'   name="+json[i].a_id+"   id='view' class='entry-title'><span class='real-t'><i class='t-tip tip-jing'>精</i>" +json[i].w_title + 
+			"</span></a></div><div class='entry-foot'><div class='other-r'><span class='views item'><a  class='username value url fn'>" + json[i].u_nickname+"</a></span ><span class='views item'><span class='index'>浏览："+
+			"</span><a class='value'>2"+"</a></span><span class='views item' ><span class='index'>评论："+"</span><a class='value'>2"+"</a></span><span class='views item'><a class='value'>"+time+"小时前</a></span></div></div></article>";
+			 $("#tab").append(str); 
+			}else if(time<1 ){
+			str = "<article><div><a href='/user/pages?page=view' onclick='view(this)'   name="+json[i].a_id+"   id='view'  class='entry-title'><span class='real-t'><i class='t-tip tip-jing'>精</i>" +json[i].w_title + 
+			"</span></a></div><div class='entry-foot'><div class='other-r'><span class='views item'><a  class='username value url fn'>" + json[i].u_nickname +"</a></span ><span class='views item'><span class='index'>浏览："+
+			"</span><a class='value'>2"+"</a></span><span class='views item' ><span class='index'>评论："+"</span><a class='value'>2"+"</a></span><span class='views item'><a class='value'>"+"刚刚</a></span></div></div></article>";
+			 $("#tab").append(str); 
+			}else{
+				
+				times=parseInt(time/24);
+			str = "<article><div><a href='/user/pages?page=view' onclick='view(this)'   name="+json[i].a_id+"   id='view'  class='entry-title'><span class='real-t'><i class='t-tip tip-jing'>精</i>" +json[i].w_title + 
+			"</span></a></div><div class='entry-foot'><div class='other-r'><span class='views item'><a  class='username value url fn'>" + json[i].u_nickname +"</a></span ><span class='views item'><span class='index'>浏览："+
+			"</span><a class='value'>2"+"</a></span><span class='views item' ><span class='index'>评论："+"</span><a class='value'>2"+"</a></span><span class='views item'><a class='value'>"+times+"天前</a></span></div></div></article>";
+			 $("#tab").append(str); 
+			}
+			}
+                      if (dqpage <= pagenum) {
+                          $("#pagenext").attr('href', 'javascript:pageajax(' + (dqpage + 1) + ');');
+                          $("#nextpage").removeClass();
+                      } else {
+                          $("#nextpage").addClass("disabled");
+                          $("#pagenext").attr('href', 'javascript:return false;');
+                      }
+                      if (dqpage != 1) {
+                          $("#prevpage").removeClass();
+                          $("#prevpage").empty();
+                          var page = '<a href="javascript:pageajax(' + (dqpage - 1) + ');" >Prev</a>';
+                          $("#prevpage").append(page)
+                      } else {
+                          $("#prevpage").addClass("disabled");
+                          $("#pageprev").attr('href', 'javascript:return false;');
+                      }
+                  }, "json");
+          }
+
+</script>
+</body></html>

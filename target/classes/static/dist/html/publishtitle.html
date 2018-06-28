@@ -1,0 +1,59 @@
+    <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>登陆成功</title>
+</head>
+<body>
+<script src="/pages/Amberhtml/js/login/jquery-3.3.1.js"></script>
+<!--  
+<span>用户:${user}</span>
+-->
+
+<form >
+	  文章标题:<input type="text"	id="title"    name="w_title"  placeholder="请输入标题" />  </br> 
+      文章内容:<input type="text"   id="content"  name="w_content"  /></br>
+        <input type="button" id="pub" value="发表" ></br>
+
+</form>
+<a href="/login.html">注销</a>
+
+<script type="text/javascript">
+	
+
+ $("#pub").click(function(){
+
+	if(pattern()){
+ 		 $.post("/user/publish", 
+ 		 {w_title:$("#title").val(),w_content:$("#content").val()}    
+     		  ,
+ 		 function(data){
+		     		
+		     		if(data==1){
+		            alert("发表成功");
+		            window.location.href="/user/pages?page=fore_page.html";
+		            return true;
+		            }
+ 		});
+ 		}
+ 		function pattern() {
+ 	   var username=document.getElementById("title"); //获取密码框值
+   		 if(username.value==""){
+         alert("标题不能为空");
+         return false;
+         }
+    	
+    	var password=document.getElementById("content"); //获取密码框值
+   		 if(password.value==""){
+         alert("文章内容不能为空");
+         return false;
+      		}
+      		return true;
+    	}
+ });
+
+</script>
+
+
+</body>
+</html>

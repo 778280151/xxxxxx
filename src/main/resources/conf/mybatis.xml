@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+		<setting name="lazyLoadingEnabled" value="true"/>
+		<setting name="aggressiveLazyLoading" value="false"/>
+	</settings>
+<!-- 	<typeAliases>设置包扫描器，设置后可以在sql映射文件的sql语句返回类型中直接映射为类名 -->
+<!-- 		<package name="com.zcj.bean" /> -->
+<!-- 	</typeAliases> -->
+
+
+
+	<!-- 规定了 数据库厂商的映射 -->
+	<databaseIdProvider type="DB_VENDOR">
+		<property name="MySQL" value="mysql" />
+		<property name="Oracle" value="oracle" />
+	</databaseIdProvider>
+	<!-- end 规定了 数据库厂商的映射 -->
+
+</configuration>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!--MyBatis逆向工程-->
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <!-- 		<jdbcConnection driverClass="oracle.jdbc.OracleDriver" -->
+        <!-- 			connectionURL="jdbc:oracle:thin:@localhost:1521:zcj" userId="c##zhangchongjie" -->
+        <!-- 			password="123"> -->
+        <!-- 		</jdbcConnection> -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://192.168.8.95:3306/Amber?useSSL=true"
+                        password="12345678" userId="root">
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.safecode.amber.bean"
+                            targetProject="src/main/java/">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!-- xmp的映射xml文件 -->
+        <sqlMapGenerator targetPackage="conf.mapper"
+                         targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!-- xmp的映射接口 -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="com.safecode.amber.dao" targetProject="src/main/java/">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <table tableName="article" domainObjectName="article"></table>
+        <table tableName="users" domainObjectName="users"></table>
+        <table tableName="comment" domainObjectName="comment"></table>
+
+    </context>
+
+</generatorConfiguration>

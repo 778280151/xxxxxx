@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://tu-z.cn/auth/register -->
+<html lang="zh-CN" class=" no-touchevents"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<!--<meta content="IE=edge" http-equiv="X-UA-Compatible"> -->
+	<meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
+	<meta name="theme-color" content="#3f51b5">
+	<title>Amber!</title>
+
+	<!-- css -->
+	<link href="/pages/Amberhtml/css/login/base.min.css" rel="stylesheet">
+	<link href="/pages/Amberhtml/css/login/project.min.css" rel="stylesheet">
+	<link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<!-- favicon -->
+	<!-- ... -->
+</head>
+<body class="page-brand">
+	<header class="header header-transparent header-waterfall ui-header affix-top">
+		<ul class="nav nav-list pull-left">
+			<li>
+				<a data-toggle="menu" href="http://tu-z.cn/auth/register#ui_menu">
+					<span class="icon icon-lg">menu</span>
+				</a>
+			</li>
+		</ul>
+		
+		<ul class="nav nav-list pull-right">
+			<li class="dropdown margin-right">
+				<a class="dropdown-toggle padding-left-no padding-right-no" data-toggle="dropdown">
+									<span class="access-hide">未登录</span>
+					<span class="avatar avatar-sm"><img alt="alt text for John Smith avatar" src="/pages/Amberhtml/img/login/avatar-001.jpg"></span>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li>
+							<a class="padding-right-lg waves-attach waves-effect" href="login.html"><span class="icon icon-lg margin-right">account_box</span>登录</a>
+						</li>
+						<li>
+							<a class="padding-right-lg waves-attach waves-effect" href="registered"><span class="icon icon-lg margin-right">pregnant_woman</span>注册</a>
+						</li>
+					</ul>
+									
+			</li>
+		</ul>
+	</header>
+	<nav aria-hidden="true" class="menu menu-left nav-drawer nav-drawer-md" id="ui_menu" tabindex="-1">
+		<div class="menu-scroll">
+			<div class="menu-content">
+				<a class="menu-logo" href="login.html"><i class="icon icon-lg">restaurant_menu</i>&nbsp;菜单</a>
+				<ul class="nav">
+					<li>
+						<a href="login.html"><i class="icon icon-lg">bookmark_border</i>&nbsp;首页</a>
+					</li>
+					<li>
+						<a href="Tos.html"><i class="icon icon-lg">text_format</i>&nbsp;TOS</a>
+					</li>
+					<!--
+					<li>
+						<a  href="/code"><i class="icon icon-lg">code</i>&nbsp;邀请码</a>
+					</li>
+					-->
+										<li>
+						<a href="/login.html"><i class="icon icon-lg">vpn_key</i>&nbsp;登录</a>
+					</li>
+					<li>
+						<a href="/registered.html"><i class="icon icon-lg">pregnant_woman</i>&nbsp;注册</a>
+					</li>
+									</ul>
+			</div>
+		</div>
+	</nav>
+
+
+<form action="/register" method="post">
+<main class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-lg-push-4 col-sm-6 col-sm-push-3">
+					<section class="content-inner">
+						<div class="card">
+							<div class="card-main">
+								<div class="card-header">
+									<div class="card-inner">
+									</div>
+								</div>
+								<div class="card-inner">
+									<p class="text-center">
+										<span class="avatar avatar-inline avatar-lg">
+											<img alt="Login" src="/pages/Amberhtml/img/login/avatar-001.jpg">
+										</span>
+									</p>
+									
+										<div class="form-group form-group-label">
+											<div class="row">
+												<div class="col-md-10 col-md-push-1">
+												<label class="floating-label" for="email">*邮箱(必填项)</label>
+													<input class="form-control" id="mazey" name="u_username" type="text">
+													
+												</div>
+											</div>
+										</div>
+										
+										<div class="form-group form-group-label">
+											<div class="row">
+												<div class="col-md-10 col-md-push-1">
+													<label class="floating-label" style="">
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+													请单击<a id="check" name="accout">【这里】</a>获取验证码！</label>
+												</div>
+											</div>
+										</div>
+										
+																				
+										<div class="form-group form-group-label">
+											<div class="row">
+												<div class="col-md-10 col-md-push-1">
+													<label class="floating-label" for="passwd">*密码(必填项)</label>
+													<input class="form-control" id="pwd" name="u_password" type="password">
+												</div>
+											</div>
+										</div>
+										<div class="form-group form-group-label">
+											<div class="row">
+												<div class="col-md-10 col-md-push-1">
+												<label class="floating-label" for="email">*昵称(必填项)</label>
+													<input class="form-control" id="nickname" name="nickname" type="text">
+													
+												</div>
+											</div>
+										</div>
+										
+										<!-- 
+										<div class="form-group form-group-label">
+											<div class="row">
+												<div class="col-md-10 col-md-push-1">
+													<label class="floating-label" for="repasswd">重复密码</label>
+													<input class="form-control" id="repasswd" type="password">
+												</div>
+											</div>
+										</div>
+										 -->
+										
+										<div class="form-group form-group-label">
+											<div class="row">
+												<div class="col-md-10 col-md-push-1">
+													<label class="floating-label" for="imtype">选择您的联络方式</label>
+													<select class="form-control" id="imtype">
+														<option></option>
+														<option value="1">微信</option>
+														<option value="2">QQ</option>
+														<option value="3">电话</option>
+													
+													</select>
+												</div>
+											</div>
+										</div>
+										
+										
+										<div class="form-group form-group-label">
+											<div class="row">
+												<div class="col-md-10 col-md-push-1">
+													<label class="floating-label" for="wechat">在这输入联络方式详情</label>
+													<input class="form-control" id="wechat" type="text">
+												</div>
+											</div>
+										</div>
+										
+										
+										
+																					<div class="form-group form-group-label">
+												<div class="row">
+													<div class="col-md-10 col-md-push-1">
+														<label class="floating-label" for="code">*请输入验证码(必填项)</label>
+														<input class="form-control" id="code" type="text" name="code" value="">
+													</div>
+												</div>
+											</div>
+																				
+																				
+										<div class="form-group">
+											<div class="row">
+												<div class="col-md-10 col-md-push-1">
+													<button type="button" id="register" class="btn btn-block btn-brand waves-attach waves-light waves-effect">注册</button>
+												</div>
+											</div>
+										</div>
+										
+										<div class="form-group">
+											<div class="row">
+												<div class="col-md-10 col-md-push-1">
+												
+												</div>
+											</div>
+										</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="clearfix">
+							<p class="margin-no-top pull-left"><a class="btn btn-flat btn-brand waves-attach waves-effect" href="login.html">已经注册？请登录</a></p>
+						</div>
+						
+						
+						
+								
+						<div aria-hidden="true" class="modal modal-va-middle fade" id="result" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-xs">
+		<div class="modal-content">
+			<div class="modal-inner">
+				<p class="h5 margin-top-sm text-black-hint" id="msg"></p>
+			</div>
+			<div class="modal-footer">
+				<p class="text-right"><button class="btn btn-flat btn-brand-accent waves-attach waves-effect" data-dismiss="modal" type="button" id="result_ok">知道了</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+						
+						
+						<div aria-hidden="true" class="modal modal-va-middle fade" id="tos_modal" role="dialog" tabindex="-1">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-heading">
+										<h2 class="modal-title">注册 TOS</h2>
+									</div>
+									<div class="modal-inner">
+										<ul>
+	<li>用户注册时候需要提供邮箱以及密码，并自行保管。邮箱为用户的唯一凭证。</li>
+	<li>本站会加密存储用户密码，尽量保证数据安全，但并不保证这些信息的绝对安全。</li>
+	<li>禁止使用本站服务进行任何违法恶意活动。</li>
+	<li>使用任何节点，需遵循节点所属国家的相关法律以及中国法律。</li>
+	<li>禁止滥用本站提供的服务。</li>
+	<li>对于免费用户，我们有权在不通知的情况下删除账户。</li>
+	<li>任何违法使用条款的用户，我们将会删除违规账户并没收使用本站服务的权利。</li>
+</ul>
+									</div>
+									<div cluass="modal-footer">
+										<p class="text-right"><button class="btn btn-flat btn-brand-accent waves-attach waves-effect" data-dismiss="modal" type="button" id="cancel">我不服</button><button class="btn btn-flat btn-brand-accent waves-attach waves-effect" data-dismiss="modal" id="reg" type="button">资慈</button></p>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</section>
+				</div>
+			</div>
+		</div>
+	</main>
+	</form>
+	<footer class="ui-footer">
+		<div class="container">
+			 © Amber! 		</div>
+	</footer>
+
+
+	<!-- js -->
+	<script src="/pages/Amberhtml/js/login/jquery-3.3.1.js"></script>
+	<script src="/pages/Amberhtml/js/login/gt.js"></script>
+
+	<script src="/pages/Amberhtml/js/login/base.min.js"></script>
+	<script src="/pages/Amberhtml/js/login/project.min.js"></script>
+	<script src="/pages/Amberhtml/js/registered/registered.js"></script>
+
+
+<script type="text/javascript">
+
+
+ //    注册action
+ $("#register").click(function(){
+
+     if(registered_jiaoyan()){
+      		
+        		    $.post("/user/register", 
+		        {u_username:$("#mazey").val(),u_password:$("#pwd").val(),code:$("#code").val(),u_nickname:$("#nickname").val()}          ,
+		     function(data){
+		       		
+		           if(data==1){
+		            alert("邮箱重复");
+		            return false;
+		            }else if(data==2){
+		             alert("验证码不一致");
+		             return false;
+		            }else if(data==3){
+		             alert("请先获取验证码");
+		             return false;
+		            }else if(data==4){
+		            alert("注册成功！");
+		           window.location.href="/user/pages?page=login.html";
+		           return true;
+		            }
+          });
+   // alert("check");
+     }
+   
+ });
+
+
+</script>
+<script>
+
+//   获取验证码
+ $("#check").click(
+ 
+ function(){
+ 	 var nowTime = new Date().getTime();
+     var clickTime = $(this).attr("ctime");
+    if( clickTime != 'undefined' && (nowTime - clickTime < 30000)){
+        alert('操作过于频繁，稍后再试(30秒一次)');
+        return false;
+     }else{
+        $(this).attr("ctime",nowTime);
+        alert('提交成功');
+     }     
+ 		
+ if(red()){
+    $.post("/user/mail", 
+        {username:$("#mazey").val()},
+    function(data){
+    			
+          });
+       }
+ });
+ 
+</script>
+<script language="JavaScript"> 
+
+//邮箱名、密码  正则判断
+	function registered_jiaoyan() {
+	   return emailjiaoyan($("#mazey").val());
+		   
+	}
+
+	
+	function emailjiaoyan(obj) { //邮箱正则校验
+		//alert(obj);
+		var reg = new RegExp("^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$"); //正则表达式
+		if (obj == "") { //输入不能为空
+			alert("输入不能为空!");
+			return false;
+		} else if (!reg.test(obj)) { //正则验证不通过，格式不对
+			alert("验证不通过!");
+			return false;
+		} else {
+		 var password=document.getElementById("pwd"); //获取密码框值
+   		 if(password.value.length<6){
+         alert("密码长度必须大于六位");
+         
+        // var code=document.getElementById("code"); //获取密码框值
+   		 //if(code==null){
+        // alert("不能為空");
+         return false;
+    } 	else{
+    	var nickname=document.getElementById("nickname");
+     if(nickname.value==""){
+         alert("昵称不能为空");
+         return false;
+         }
+    }
+			// alert("通过！");
+			
+		//	return true;
+		}
+		
+	//	 var password=document.getElementById("pwd"); //获取密码框值
+   
+  
+          return true;
+    }
+	
+	
+	
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+function red() {
+	   return yanzheng($("#mazey").val());
+		   
+	}
+
+function yanzheng(obj) { //邮箱正则校验
+		
+		//alert(obj);
+		var reg = new RegExp("^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$"); //正则表达式
+		if (obj == "") { //输入不能为空
+			alert("输入不能为空!");
+			return false;
+		} else if (!reg.test(obj)) { //正则验证不通过，格式不对
+			alert("验证不通过!");
+			return false;
+		}else{
+          return true;
+         };
+          
+        
+          
+    
+
+}
+    
+</script>
+
+</body></html>

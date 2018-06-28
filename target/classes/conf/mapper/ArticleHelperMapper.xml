@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.safecode.dao.UserPageHelper">
+
+	<resultMap type="com.safecode.entity.Article" id="user">
+		<id column="a_id" jdbcType="INTEGER" property="aId" />
+		<id column="u_id" jdbcType="INTEGER" property="uId" />
+		<id column="w_id" jdbcType="INTEGER" property="wId" />
+		<result column="w_title" jdbcType="VARCHAR" property="wtitle" />
+		<result column="w_content" jdbcType="VARCHAR" property="wcontent" />
+	
+	</resultMap>
+ 		
+	<select id="selectArticlePageHelper" resultType="com.safecode.entity.Article">
+		select * from Article order by a_id desc 
+		
+	</select>
+</mapper> 
+
+
+
+<!-- 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.safecode.dao.UserMapper">
+
+	<resultMap type="com.safecode.entity.User" id="user">
+		<id column="u_id" jdbcType="INTEGER" property="uId" />
+		<result column="u_username" jdbcType="VARCHAR" property="uUsername" />
+		<result column="u_password" jdbcType="VARCHAR" property="uPwd" />
+	</resultMap> 
+
+	<select id="selectUserAll" resultType="com.safecode.entity.User">
+		select * from user
+	</select>
+</mapper>
+ -->
